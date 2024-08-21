@@ -33,14 +33,22 @@ const Popular = () => {
         <h3>Popular Picks</h3>
         <Splide
           options={{
-            perPage: 4,
-            arrows: false,
+            perPage: 1,
+            arrows: true,
             pagination: false,
             drag: "free",
             gap: "1rem",
             breakpoints: {
+              2560: {
+                perPage: 4,
+                gap: "2.5rem",
+              },
+              1440: {
+                perPage: 4,
+                gap: "1.5rem",
+              },
               1200: {
-                perPage: 3,
+                perPage: 4,
                 gap: "1.5rem",
               },
               768: {

@@ -32,22 +32,30 @@ const Veggies = () => {
         <h3>Our Vegetarian Pick</h3>
         <Splide
           options={{
-            perPage: 3,
-            arrows: false,
+            perPage: 1,
+            arrows: true,
             pagination: false,
             drag: "free",
             gap: "1rem",
             breakpoints: {
+              2560: {
+                perPage: 5,
+                gap: "2rem",
+              },
+              1440: {
+                perPage: 3,
+                gap: "1.5rem",
+              },
               1200: {
-                perPage: 2,
+                perPage: 3,
                 gap: "1.5rem",
               },
               768: {
-                perPage: 2,
+                perPage: 3,
                 gap: "2rem",
               },
               480: {
-                perPage: 2,
+                perPage: 1,
                 gap: "2.5rem",
               },
             },
