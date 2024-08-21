@@ -84,7 +84,6 @@ const Recipe = () => {
   );
 };
 
-// Styled Components
 const DetailWrapper = styled.div`
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -110,7 +109,7 @@ const ContentWrapper = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
   margin-bottom: 1.2rem;
@@ -139,7 +138,7 @@ const Info = styled.div`
 const Button = styled(motion.button)`
   padding: 0.8rem 1.5rem;
   margin: 0 0.5rem 1rem 0;
-  font-size: 1rem;
+  font-size: 0.6rem;
   color: #313131;
   background-color: white;
   border: 2px solid #313131;
@@ -159,6 +158,7 @@ const Button = styled(motion.button)`
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    font-size: 1rem;
   }
 `;
 
@@ -171,30 +171,46 @@ const TextContent = styled.div`
 `;
 
 const Summary = styled.h3`
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #fff;
-  line-height: 1.6rem;
+  line-height: 1.2rem;
   margin-bottom: 1.5rem;
+  font-weight: small;
+
+  @media (min-width: 768px) {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+  }
 `;
 
 const Instructions = styled.h3`
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #fff;
-  line-height: 1.6rem;
+  line-height: 1.2rem;
+
+  @media (min-width: 768px) {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+  }
 `;
 
 const IngredientsList = styled.ul`
-  list-style-type: none;
   padding: 0;
   margin-top: 2rem;
 `;
 
 const IngredientItem = styled.li`
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
-  line-height: 2rem;
+  line-height: 1.5rem;
   margin-bottom: 0.2rem;
+  margin-left: 2rem;
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
 `;
 
 export default Recipe;

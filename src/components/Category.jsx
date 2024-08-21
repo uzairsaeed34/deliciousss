@@ -32,6 +32,16 @@ const List = styled.div`
   justify-content: center;
   margin: 2rem 0rem;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 const SLink = styled(NavLink)`
@@ -61,13 +71,13 @@ const SLink = styled(NavLink)`
   }
 
   &:hover {
-    transform: scale(0.9); /* Subtle hover effect */
+    transform: scale(0.9);
     background: linear-gradient(to right, #494949, #313131);
   }
 
   &.active {
     background: linear-gradient(to right, #f27121, #e94057);
-    transform: scale(0.9); /* Ensure active items have a similar hover effect */
+    transform: scale(0.9);
     svg {
       color: white;
     }

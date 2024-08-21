@@ -43,12 +43,26 @@ body {
 
 .container {
   position: relative;
-  z-index: 2; /* Ensures content is above the overlay */
-  max-width: 1200px; /* You can adjust this width as needed */
-  margin: 0 15%; /* Centers the content */
-  padding: 20px; /* Adds some padding inside the content */
-  border-radius: 8px; /* Optional: Add rounded corners to the content */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 15%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 15%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0 2%;
+    padding: 10px;
+  }
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
